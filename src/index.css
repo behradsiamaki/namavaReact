@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "VazirRegular";
+  src: local("VazirRegular"), url("./assets/font/Vazirmatn-Regular.ttf");
+}
+
+:root {
+  --primeryColor: #121212;
+  --textColor: white;
+  --linkColor: #ccc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--linkColor);
+  transition: all 0.25s ease-in-out;
+}
+
+body {
+  font-family: "VazirRegular";
+  font-size: 14px;
+  background-color: var(--primeryColor);
+  color: var(--textColor);
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}

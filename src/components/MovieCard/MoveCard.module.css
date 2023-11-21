@@ -1,0 +1,33 @@
+.movieCard {
+    flex-basis: 16.6666%;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.movieCard:hover .movieCardDetail {
+    opacity: 1;
+}
+
+.movieCardImage {
+    position: relative;
+}
+
+.movieCardImage>img {
+    height: 340px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.movieCardDetail {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 15px;
+    transition: 0.25s ease-in-out;
+}
