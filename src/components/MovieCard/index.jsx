@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function MovieCard({ data }) {
   return (
     <div className={style.movieCard}>
-      <Link to={`item/${data.id}`}>
+      <Link to={`/item/${data.id}`}>
         <div>
           <div className={style.movieCardImage}>
             <img src={data.poster} />

@@ -35,11 +35,12 @@ function Item() {
         console.log(error);
       });
   };
+
   useEffect(() => {
     fetchData(id);
     fetchDataRecommend();
-  }, []);
-  console.log(movieItem);
+  }, [id]);
+
   return (
     <>
       {loading ? (
